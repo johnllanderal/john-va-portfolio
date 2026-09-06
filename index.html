@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="John Andre — Freelance Virtual Assistant specializing in customer support, social media management, and project coordination." />
+<meta name="theme-color" content="#EDE6D6" />
+<title>John Andre | Virtual Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="tab-strip container">
+    <a class="brand-tab" href="#top">John Andre</a>
+    <nav class="tabs" aria-label="Main navigation">
+      <a href="#day" class="tab">A day like this</a>
+      <a href="#about" class="tab">About</a>
+      <a href="#services" class="tab">What I do</a>
+      <a href="#work" class="tab">The work</a>
+      <a href="#book" class="tab">Book a call</a>
+      <a href="#toolkit" class="tab">Toolkit</a>
+      <a href="#contact" class="tab tab-cta">Get in touch</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero section">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="kicker">Freelance virtual assistant, based in the Philippines</p>
+        <h1>I bring order to the parts of your business that keep piling up.</h1>
+        <p class="hero-text">Six years of running customer support, social media, and remote teams for businesses who'd rather focus on the next thing than the backlog.</p>
+        <div class="hero-actions">
+          <a class="btn btn-ink" href="#book">Book a discovery call</a>
+          <a class="btn btn-outline" href="#work">See the work</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-card">
+          <div class="stamp">Available<br>for work</div>
+          <img src="assets/john-profile.jpg" alt="Professional portrait of John Andre" />
+        </div>
+
+        <div class="queue-panel" aria-hidden="true">
+          <div class="queue-head">
+            <span class="dot"></span> Support queue — live view
+          </div>
+          <ul class="queue-list" id="queueList"></ul>
+          <div class="queue-foot">
+            Resolved today: <strong id="queueCount">0</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stat-row container" id="statRow">
+      <div class="stat-card" data-target="6" data-suffix="+">
+        <span class="stat-num">0</span>
+        <span class="stat-label">Years experience</span>
+      </div>
+      <div class="stat-card" data-target="95" data-suffix="%">
+        <span class="stat-num">0</span>
+        <span class="stat-label">First-contact resolution</span>
+      </div>
+      <div class="stat-card" data-target="300" data-suffix="%">
+        <span class="stat-num">0</span>
+        <span class="stat-label">Organic follower growth, delivered</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section day" id="day">
+    <div class="container">
+      <h2>A day like this, roughly</h2>
+      <p class="section-sub">No two days are identical, but this is close to a typical shift.</p>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="time">8:00 AM</span>
+          <div class="timeline-body">
+            <h3>Inbox &amp; ticket triage</h3>
+            <p>Sort overnight messages across email, chat, and social DMs, and flag anything urgent first.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="time">10:00 AM</span>
+          <div class="timeline-body">
+            <h3>Customer support queue</h3>
+            <p>Work through tickets and calls, aiming to resolve on first contact and spot upsell opportunities along the way.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="time">1:00 PM</span>
+          <div class="timeline-body">
+            <h3>Content &amp; social</h3>
+            <p>Draft captions, schedule posts, and check how yesterday's content performed.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="time">3:00 PM</span>
+          <div class="timeline-body">
+            <h3>Project check-ins</h3>
+            <p>Update task boards, follow up with the team, and keep client projects moving on schedule.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="time">5:00 PM</span>
+          <div class="timeline-body">
+            <h3>Wrap-up &amp; reporting</h3>
+            <p>Log what got done, prep tomorrow's priorities, and send a short end-of-day update.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="container two-col">
+      <div class="about-lead">
+        <h2>Six years of keeping other people's businesses running smoothly.</h2>
+      </div>
+      <div class="about-copy">
+        <p>I'm John — I've spent the last six years across customer support, social media management, and remote project coordination, mostly for US and Canadian businesses.</p>
+        <p>I've led teams of virtual assistants, kept support queues under control, and grown brand pages by the hundreds of percent through consistent, targeted content. I'm used to managing several things at once without dropping any of them.</p>
+        <p>If something needs organizing, answering, or following up on — that's usually where I come in.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section services" id="services">
+    <div class="container">
+      <h2>Where I can take work off your plate</h2>
+      <p class="section-sub">Tap a folder to see what's inside.</p>
+
+      <div class="folder-accordion" id="folderAccordion">
+        <div class="folder" data-open="true">
+          <button class="folder-tab" aria-expanded="true">
+            <span class="folder-title">Customer support</span>
+            <span class="folder-chevron">＋</span>
+          </button>
+          <div class="folder-panel">
+            <p>Handle high volumes of customer inquiries across phone, chat, and email, with a focus on fast, first-contact resolution.</p>
+            <ul>
+              <li>Phone, chat &amp; email support</li>
+              <li>Escalation handling</li>
+              <li>QA-driven service, 90%+ ratings</li>
+              <li>Customer retention &amp; follow-ups</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="folder">
+          <button class="folder-tab" aria-expanded="false">
+            <span class="folder-title">Sales &amp; upselling</span>
+            <span class="folder-chevron">＋</span>
+          </button>
+          <div class="folder-panel">
+            <p>Turn support conversations into revenue with upselling and cross-selling techniques that don't feel pushy.</p>
+            <ul>
+              <li>Upselling &amp; cross-selling</li>
+              <li>Sales target achievement</li>
+              <li>Agent coaching &amp; mentoring</li>
+              <li>Conversion-focused scripting</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="folder">
+          <button class="folder-tab" aria-expanded="false">
+            <span class="folder-title">Social media management</span>
+            <span class="folder-chevron">＋</span>
+          </button>
+          <div class="folder-panel">
+            <p>Plan, create, and manage content that grows engagement instead of just filling a calendar.</p>
+            <ul>
+              <li>Content strategy &amp; calendars</li>
+              <li>Canva graphics &amp; captions</li>
+              <li>Facebook, TikTok, LinkedIn, Instagram</li>
+              <li>Analytics &amp; performance reporting</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="folder">
+          <button class="folder-tab" aria-expanded="false">
+            <span class="folder-title">Project &amp; team management</span>
+            <span class="folder-chevron">＋</span>
+          </button>
+          <div class="folder-panel">
+            <p>Keep remote teams and projects on track with clear systems and consistent follow-through.</p>
+            <ul>
+              <li>Virtual assistant team leadership</li>
+              <li>Trello &amp; SOP workflows</li>
+              <li>Client reporting</li>
+              <li>Marketing &amp; admin project delivery</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="folder">
+          <button class="folder-tab" aria-expanded="false">
+            <span class="folder-title">CRM &amp; digital operations</span>
+            <span class="folder-chevron">＋</span>
+          </button>
+          <div class="folder-panel">
+            <p>Keep your digital systems clean and documented so your team can work with less friction.</p>
+            <ul>
+              <li>Salesforce &amp; CRM tools</li>
+              <li>Notion &amp; Slack</li>
+              <li>Google Workspace &amp; Meta Business Suite</li>
+              <li>Workflow &amp; process support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section work" id="work">
+    <div class="container">
+      <h2>Real work, real numbers</h2>
+      <p class="section-sub">Flip a card to read the full story.</p>
+
+      <div class="card-grid">
+
+        <button class="flip-card" type="button" aria-pressed="false">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <span class="card-tag">Social media</span>
+              <p class="card-stat">+300%</p>
+              <p class="card-stat-label">Organic community growth</p>
+              <span class="flip-hint">Tap to read more</span>
+            </div>
+            <div class="flip-back">
+              <p class="card-tag">Freelance</p>
+              <h3>Social media management</h3>
+              <p>Strategized and executed content campaigns across Facebook, TikTok, and LinkedIn, created 100+ branded Canva posts, and lifted engagement by 80% while boosting average order value by 35% through upselling in captions and promotions.</p>
+              <div class="tags"><span>Canva</span><span>Meta Business Suite</span><span>Analytics</span></div>
+            </div>
+          </div>
+        </button>
+
+        <button class="flip-card" type="button" aria-pressed="false">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <span class="card-tag">Operations</span>
+              <p class="card-stat">+60%</p>
+              <p class="card-stat-label">Team productivity</p>
+              <span class="flip-hint">Tap to read more</span>
+            </div>
+            <div class="flip-back">
+              <p class="card-tag">Project management</p>
+              <h3>Remote team &amp; project management</h3>
+              <p>Led a team of virtual assistants supporting US clients, streamlining task assignments through Trello and SOPs and increasing team productivity by 60%.</p>
+              <div class="tags"><span>Trello</span><span>SOPs</span><span>Client reporting</span></div>
+            </div>
+          </div>
+        </button>
+
+        <button class="flip-card" type="button" aria-pressed="false">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <span class="card-tag">Support &amp; sales</span>
+              <p class="card-stat">95%</p>
+              <p class="card-stat-label">Resolved on first contact</p>
+              <span class="flip-hint">Tap to read more</span>
+            </div>
+            <div class="flip-back">
+              <p class="card-tag">Customer service</p>
+              <h3>Customer support &amp; sales</h3>
+              <p>Handled 80+ customers per shift across phone, chat, and email for a US &amp; Canada telecom account with a 90%+ QA rating, and exceeded sales targets by 120% within the first three months.</p>
+              <div class="tags"><span>Salesforce</span><span>Upselling</span><span>QA</span></div>
+            </div>
+          </div>
+        </button>
+
+        <button class="flip-card" type="button" aria-pressed="false">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <span class="card-tag">Marketing</span>
+              <p class="card-stat">+40%</p>
+              <p class="card-stat-label">Page engagement</p>
+              <span class="flip-hint">Tap to read more</span>
+            </div>
+            <div class="flip-back">
+              <p class="card-tag">Digital campaigns</p>
+              <h3>Marketing &amp; campaign support</h3>
+              <p>Designed and scheduled 50+ awareness posts for a government digital campaign, increasing page engagement by 40% and contributing to 20% follower growth in six months.</p>
+              <div class="tags"><span>Canva</span><span>Facebook Creator Studio</span><span>Content strategy</span></div>
+            </div>
+          </div>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section book" id="book">
+    <div class="container">
+      <h2>Book a discovery call</h2>
+      <p class="section-sub">Pick a time that works for you — a quick call to see if we're a good fit, no pressure.</p>
+
+      <div class="book-frame">
+        <div class="calendly-inline-widget" data-url="https://calendly.com/john-llanderal21/new-meeting?hide_gdpr_banner=1" style="min-width:280px;height:100%;"></div>
+      </div>
+
+      <p class="book-fallback">Widget not loading? <a href="https://calendly.com/john-llanderal21/new-meeting" target="_blank" rel="noopener">Open the scheduling page directly</a>.</p>
+    </div>
+  </section>
+
+  <section class="section toolkit" id="toolkit">
+    <div class="container">
+      <h2>The tools I already know</h2>
+      <p class="section-sub">Filter by what you need most.</p>
+
+      <div class="chip-row" id="chipRow">
+        <button class="chip is-active" data-filter="all">All</button>
+        <button class="chip" data-filter="support">Support</button>
+        <button class="chip" data-filter="marketing">Marketing</button>
+        <button class="chip" data-filter="operations">Operations</button>
+      </div>
+
+      <div class="tool-list" id="toolList">
+        <div class="tool-row" data-category="marketing"><span>Canva</span><div class="meter"><i style="width:95%"></i></div><b>5/5</b></div>
+        <div class="tool-row" data-category="support"><span>Customer support (phone / chat / email)</span><div class="meter"><i style="width:95%"></i></div><b>5/5</b></div>
+        <div class="tool-row" data-category="marketing"><span>Social media strategy</span><div class="meter"><i style="width:95%"></i></div><b>5/5</b></div>
+        <div class="tool-row" data-category="operations"><span>Google Workspace</span><div class="meter"><i style="width:90%"></i></div><b>5/5</b></div>
+        <div class="tool-row" data-category="marketing"><span>Meta Business Suite</span><div class="meter"><i style="width:85%"></i></div><b>4/5</b></div>
+        <div class="tool-row" data-category="support"><span>Salesforce</span><div class="meter"><i style="width:80%"></i></div><b>4/5</b></div>
+        <div class="tool-row" data-category="operations"><span>Notion / Slack</span><div class="meter"><i style="width:85%"></i></div><b>4/5</b></div>
+        <div class="tool-row" data-category="operations"><span>Trello</span><div class="meter"><i style="width:80%"></i></div><b>4/5</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section values">
+    <div class="container">
+      <h2>Why clients keep coming back</h2>
+      <div class="value-row">
+        <div class="value-card">
+          <span class="value-icon">✓</span>
+          <h3>Reliable</h3>
+          <p>Consistent communication, follow-through, and ownership, without needing to be chased.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">◆</span>
+          <h3>Detail-oriented</h3>
+          <p>The small things that keep customer experiences and operations clean don't slip past me.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">↻</span>
+          <h3>Proactive</h3>
+          <p>I look for the next useful step instead of waiting for every task to be handed to me.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">＋</span>
+          <h3>Adaptable</h3>
+          <p>New tools and processes are part of remote work — I'm comfortable learning as I go.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container contact-card">
+      <div class="contact-lead">
+        <h2>Tell me what needs doing</h2>
+        <p>Pick what's closest to what you need, and I'll open a message pre-filled to get us started faster.</p>
+      </div>
+
+      <div class="work-order">
+        <label for="workType">I need help with</label>
+        <select id="workType">
+          <option value="support">Customer support</option>
+          <option value="social">Social media management</option>
+          <option value="pm">Project or team coordination</option>
+          <option value="other">Something else</option>
+        </select>
+
+        <div class="contact-actions">
+          <a class="btn btn-ink" id="emailBtn" href="mailto:john.llanderal21@gmail.com">Email me</a>
+          <a class="btn btn-outline" id="whatsappBtn" href="https://wa.me/639214512028" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/john-andre-llanderal-8300302a4" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.onlinejobs.ph/jobseekers/info/4038318" target="_blank" rel="noopener">OnlineJobs.ph profile</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-wrap">
+    <div>
+      <strong>John Andre</strong>
+      <p>Freelance virtual assistant</p>
+    </div>
+    <div>
+      <p>© <span id="year"></span> John Andre. All rights reserved.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-bar" aria-hidden="true">
+  <a href="#book">Book a call</a>
+  <a href="mailto:john.llanderal21@gmail.com">Email</a>
+  <a href="https://wa.me/639214512028" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script src="script.js"></script>
+</body>
+</html>
