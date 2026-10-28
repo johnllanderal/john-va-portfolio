@@ -1,0 +1,6 @@
+Order ID (demo),Customer,Issue,Status,Opened,Next follow-up,Notes
+DEMO-3101,M. Cruz,Delivery delayed,Waiting on carrier,Day 1,Day 3,Tracking stalled; checking daily
+DEMO-3102,T. Lee,Return requested,Return label sent,Day 1,Day 6,Refund after item is received
+DEMO-3103,S. Okafor,Wrong item received,Replacement approved,Day 2,Day 4,Confirm replacement has shipped
+DEMO-3104,R. Silva,Order status question,Resolved,Day 2,,Tracking link sent; ticket closed
+DEMO-3105,K. Tan,Damaged item,Awaiting photos,Day 3,Day 4,Photos requested; ticket set to Pending
